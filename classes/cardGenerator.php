@@ -48,13 +48,15 @@ class CardGenerator {
 
     private static function cardHTML($data){
 
-        $html = "<div class='card' style='background-color: #e08283;'>";
-            $html .= "<img class='card-img-top' src='resources/assets/placeholderImage.png' alt='Card image cap'>";
-            $html .= "<div class='card-body bg-danger'>";
-                $html .= "<h4 class='card-title'>{$data["title"]}</h4>";
-                $html .= "<p class='card-text'>{$data["content"]}</p>";
-            $html .= "</div>";
-        $html .= "</div>";
+        $html = "<a href='project.php?id={$data["id"]}' class='card custom-card'>";
+            //$html .= "<div class='card' style='background-color: #e08283;'>";
+                $html .= "<img class='card-img-top' src='resources/assets/placeholderImage.png' alt='Card image cap'>";
+                $html .= "<div class='card-body'>";
+                    $html .= "<h4 class='card-title'>{$data["title"]}</h4>";
+                    $html .= "<p class='card-text'>{$data["content"]}</p>";
+                $html .= "</div>";
+            //$html .= "</div>";
+        $html .= "</a>";
 
         return $html;
 

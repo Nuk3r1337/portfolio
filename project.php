@@ -1,10 +1,10 @@
 <?php
+require_once "classes/projectViewer.php";
 
-require_once "classes/cardGenerator.php";
-
-//var_dump($database->query("SELECT * FROM projects WHERE id = ?", [2])->fetchAssoc());
+$pw = new ProjectViewer($_GET["id"]);
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en-uk">
     <head>
@@ -24,10 +24,10 @@ require_once "classes/cardGenerator.php";
         <!-- My css -->
         <link rel="stylesheet" type="text/css" href="resources/stylesheet.css">
 
-        <title>Portfolio - Johnny K. Pedersen</title>
+        <title>Projekt <?php echo $_GET["id"] ?></title>
     </head>
-        <body>
 
+        <body>
         <?php
 
             require_once "templates/navbar.php";
@@ -35,13 +35,19 @@ require_once "classes/cardGenerator.php";
         ?>
 
         <div class="container">
+            <h2 class="projekt-title">Le epic title</h2>
 
-            <?php
-
-            CardGenerator::generateCards();
-
-            ?>
-
+            <div class="row">
+                <div class="col-sm-6 bg-success">
+                    &nbsp;
+                </div>
+                <div class="col-sm-1 bg-dark">
+                    &nbsp;
+                </div>
+                <div class="col-sm-5 bg-danger">
+                    <p></p>
+                </div>
+            </div>
         </div>
 
         <!-- Optional JavaScript (Bootstrap) -->
