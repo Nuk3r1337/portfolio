@@ -5,3 +5,7 @@ color: whitesmoke;
 #topmargin {
     margin-top: 30px;
 }
+
+body {
+    background-color: #bfbfbf;
+}

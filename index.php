@@ -1,11 +1,8 @@
 <?php
 
-require "classes/database.php";
-
-$database = new Database();
+require_once "classes/cardGenerator.php";
 
 //var_dump($database->query("SELECT * FROM projects WHERE id = ?", [2])->fetchAssoc());
-
 
 ?>
 <!DOCTYPE html>
@@ -31,34 +28,18 @@ $database = new Database();
     </head>
         <body>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark" >
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1e824c;" >
             <a class="navbar-brand" href="/" id="textcolor"> <img src="resources/assets/folder-logo-100px.png" width="35"> Portfolio</a>
         </nav>
 
-        <div class="container" id="topmargin">
-            <div class="card-deck" >
-                <div class="card">
-                    <img class="card-img-top" src="resources/assets/placeholderImage.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="resources/assets/placeholderImage.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                    </div>
-                </div>
-                <div class="card">
-                    <img class="card-img-top" src="resources/assets/placeholderImage.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    </div>
-                </div>
-            </div>
+        <div class="container">
+
+            <?php
+
+            CardGenerator::generateCards();
+
+            ?>
+
         </div>
 
 
