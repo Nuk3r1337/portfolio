@@ -1,3 +1,10 @@
+<?php
+
+require_once "classes/cardGenerator.php";
+
+//var_dump($database->query("SELECT * FROM projects WHERE id = ?", [2])->fetchAssoc());
+
+?>
 <!DOCTYPE html>
 <html lang="en-uk">
     <head>
@@ -8,21 +15,33 @@
         <meta name="author" content="Johnny K. Pedersen">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+        <!-- Favicon -->
+        <!--<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"/>-->
+
         <!-- Bootstrap css -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
         <!-- My css -->
         <link rel="stylesheet" type="text/css" href="resources/stylesheet.css">
 
-        <title>Portfolio</title>
+        <title>Portfolio - Johnny K. Pedersen</title>
     </head>
         <body>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-dark" >
-            <a class="navbar-brand" href="#" id="textcolor">Portfolio</a>
-
-
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #1e824c;" >
+            <a class="navbar-brand" href="/" id="textcolor"> <img src="resources/assets/folder-logo-100px.png" width="35"> Portfolio</a>
         </nav>
+
+        <div class="container">
+
+            <?php
+
+            CardGenerator::generateCards();
+
+            ?>
+
+        </div>
+
 
 
         <!-- Optional JavaScript (Bootstrap) -->
