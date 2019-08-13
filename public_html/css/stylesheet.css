@@ -1,0 +1,65 @@
+body {
+    background-color: #D4E3B8;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+a.custom-card,
+a.custom-card:hover {
+    color: inherit;
+}
+
+.custom-card{
+    background-color: #e08283;
+}
+
+a.custom-card:hover{
+    background-color: #EDAAB3;
+    text-decoration: none;
+}
+
+.custom-card > .card-body {
+    background-color: #dc3545;
+}
+
+a.custom-card:hover > .card-body {
+   background-color: #f03434;
+}
+
+.fill-img{
+    object-fit: contain;
+}
+
+.projects-output > div.row {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.project-element{
+    background-color: #81AC77;
+    color: #fff;
+}
+
+#project-carousel{
+    background-color: #EDAAB3;
+}
+
+.custom-navbar-style{
+    background-color: #1e824c;
+    margin-bottom: 20px;
+}
+
+.content-output, .custom-card-deck{
+    padding: 10px;
+}
+
+.content-output{
+    margin-bottom: 20px;
+    background-color: #ECEBE6;
+}
+
+hr{
+    border: 2px solid #EDAAB3;
+    border-radius: 10px;
+}

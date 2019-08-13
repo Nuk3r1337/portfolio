@@ -18,7 +18,7 @@ class Database {
      */
     public function __construct() {
 
-        $config = require "{$_SERVER["DOCUMENT_ROOT"]}/config/database.php";
+        $config = require "../config/database.php";
 
 
         try {

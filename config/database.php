@@ -7,8 +7,8 @@
 return [
 
     "HOSTNAME" => "localhost",
-    "USERNAME" => "johnny",
-    "PASSWORD" => "qawsed123",
+    "USERNAME" => "root",
+    "PASSWORD" => "",
     "DATABASE" => "portfolio",
     "CHARSET" => "utf8mb4"
 
