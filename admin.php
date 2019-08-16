@@ -2,10 +2,10 @@
 session_start();
 
 if (!isset($_SESSION["LOGIN_STATUS"])){
-    header("Location: ../public_html/index.php");
+    header("Location: /index.php");
 }
 
-require_once "../classes/projectModel.php";
+require_once "classes/projectModel.php";
 
 ?>
 <!DOCTYPE html>
@@ -15,7 +15,7 @@ require_once "../classes/projectModel.php";
         <meta name="description" content="Free Web tutorials">
 
         <!-- Require header -->
-        <?php require_once "../templates/header.php"; ?>
+        <?php require_once "templates/header.php"; ?>
 
         <title>loggedin hamachi</title>
     </head>
@@ -23,7 +23,7 @@ require_once "../classes/projectModel.php";
 
     <?php
 
-    require_once "../templates/navbar.php";
+    require_once "templates/navbar.php";
 
     ?>
 
@@ -78,7 +78,7 @@ require_once "../classes/projectModel.php";
     </div>
 
     <!-- Require footer -->
-    <?php require_once "../templates/footer.php"; ?>
+    <?php require_once "templates/footer.php"; ?>
 
     </body>
 </html>

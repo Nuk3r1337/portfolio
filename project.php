@@ -1,5 +1,5 @@
 <?php
-require_once "../classes/projectViewer.php";
+require_once "classes/projectViewer.php";
 
 $projectViewer = new ProjectViewer($_GET["id"]);
 
@@ -12,7 +12,7 @@ $projectViewer = new ProjectViewer($_GET["id"]);
         <meta name="description" content="Free Web tutorials">
 
         <!-- Require header -->
-        <?php require_once "../templates/header.php"; ?>
+        <?php require_once "templates/header.php"; ?>
 
         <title>Projekt <?php echo $_GET["id"] ?></title>
     </head>
@@ -20,7 +20,7 @@ $projectViewer = new ProjectViewer($_GET["id"]);
     <body>
 
         <!-- Require navbar -->
-        <?php require_once "../templates/navbar.php"; ?>
+        <?php require_once "templates/navbar.php"; ?>
 
         <div class="container content-output">
 
@@ -30,7 +30,7 @@ $projectViewer = new ProjectViewer($_GET["id"]);
         </div>
 
         <!-- Require footer -->
-        <?php require_once "../templates/footer.php"; ?>
+        <?php require_once "templates/footer.php"; ?>
 
     </body>
 </html>

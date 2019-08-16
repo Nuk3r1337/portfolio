@@ -1,7 +1,6 @@
 <?php
-die;
 
-require_once "../classes/cardGenerator.php";
+require_once "classes/cardGenerator.php";
 
 ?>
 <!DOCTYPE html>
@@ -11,14 +10,14 @@ require_once "../classes/cardGenerator.php";
         <meta name="description" content="Free Web tutorials">
 
         <!-- Require header -->
-        <?php require_once "../templates/header.php"; ?>
+        <?php require_once "templates/header.php"; ?>
 
         <title>Portfolio - Johnny K. Pedersen</title>
     </head>
     <body>
 
         <!-- Require navbar -->
-        <?php require_once "../templates/navbar.php"; ?>
+        <?php require_once "templates/navbar.php"; ?>
 
         <div class="container content-output">
 
@@ -28,7 +27,7 @@ require_once "../classes/cardGenerator.php";
         </div>
 
         <!-- Require footer -->
-        <?php require_once "../templates/footer.php"; ?>
+        <?php require_once "templates/footer.php"; ?>
 
     </body>
 </html>

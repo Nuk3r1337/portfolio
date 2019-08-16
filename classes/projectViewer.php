@@ -1,6 +1,6 @@
 <?php
 
-require_once "../classes/database.php";
+require_once "classes/database.php";
 
 class ProjectViewer
 {

@@ -1,5 +1,5 @@
 <?php
-require "../classes/database.php";
+require "classes/database.php";
 
 
 class Authentication

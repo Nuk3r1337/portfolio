@@ -1,7 +1,7 @@
 <?php
 
-require "../classes/database.php";
-require "../classes/stringHelper.php";
+require "classes/database.php";
+require "classes/stringHelper.php";
 
 class CardGenerator {
 
@@ -51,7 +51,7 @@ class CardGenerator {
 
     private static function cardHTML($data){
 
-        $thumbnail = (!isset($data["path"])) ? "/portfolio/public_html/assets/placeholderImage.png" : "/portfolio/public_html/project_pictures/{$data["path"]}";
+        $thumbnail = (!isset($data["path"])) ? "assets/placeholderImage.png" : "project_pictures/{$data["path"]}";
 
         $html = ($data["id"] === false) ? '<div class="card custom-card">' : '<a href="project.php?id='. $data["id"] .'" class="card custom-card">';
             $html .= '<img class="card-img-top" src="'. $thumbnail .'" width="300px" height="200px" alt="Card image cap">';

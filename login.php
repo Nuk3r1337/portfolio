@@ -1,6 +1,6 @@
 <?php
 session_start();
-require "../classes/authentication.php";
+require "classes/authentication.php";
 
 $auth = new Authentication();
 
@@ -15,14 +15,14 @@ $auth = new Authentication();
         <title>logmein hamachi</title>
 
         <!-- Require header -->
-        <?php require_once "../templates/header.php"; ?>
+        <?php require_once "templates/header.php"; ?>
 
     </head>
     <body>
 
         <?php
 
-        require_once "../templates/navbar.php";
+        require_once "templates/navbar.php";
 
         ?>
 
@@ -61,7 +61,7 @@ $auth = new Authentication();
         </div>
 
         <!-- Require footer -->
-        <?php require_once "../templates/footer.php"; ?>
+        <?php require_once "templates/footer.php"; ?>
 
     </body>
 </html>
