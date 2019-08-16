@@ -46,7 +46,7 @@ require_once "classes/projectModel.php";
                             $html .='<span aria-hidden="true">&times;</span>';
                             $html .='</button>';
                         $html .='<strong>Fejl!</strong> '. $output;
-                        $html .='</div>';
+                    $html .='</div>';
 
                     echo $html;
                 }
