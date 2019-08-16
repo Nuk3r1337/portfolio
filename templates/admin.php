@@ -2,7 +2,7 @@
 session_start();
 
 if (!isset($_SESSION["LOGIN_STATUS"])){
-    header("Location: ../public_html/index.php");
+    header("Location: /");
 }
 
 require_once "../classes/projectModel.php";
